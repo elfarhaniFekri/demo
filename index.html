@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolidFrame | Fekri El Farhani</title>
+  <meta name="description" content="Portfolio of Fekri El Farhani: front-end developer, UI/UX designer, 3D artist and game developer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a href="#top" class="logo">
+        <svg class="logo__icon" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 2 28 9v14L16 30 4 23V9z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M16 9l6 3.5v7L16 23l-6-3.5v-7z" fill="currentColor" opacity=".85"/>
+        </svg>
+        <span>SolidFrame</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#top" class="nav__link active">Home</a>
+        <a href="#projects" class="nav__link">Projects</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== Hero / Featured project ===== -->
+    <section class="hero">
+      <div class="hero__slides" id="heroSlides">
+        <div class="hero__slide active ph ph--factory"><img src="images/im1.png" alt="arrowword /></div>
+        <div class="hero__slide ph ph--factory2"><img src="images/im1.png" alt="arrowword" /></div>
+        <div class="hero__slide ph ph--factory3"><img src="images/im1.png" alt="arrowword" /></div>
+        <div class="hero__slide ph ph--factory4"><img src="images/im1.png" alt="arrowword" /></div>
+      </div>
+      <div class="hero__overlay"></div>
+
+      <div class="container hero__content">
+        <p class="eyebrow">Featured Project</p>
+        <h1 class="hero__title">Arrowword <span class="accent">Arabic English</span></h1>
+        <p class="hero__subtitle">Play. Learn. Enjoy.</p>
+        <p class="hero__text">
+Discover a new way to learn English through fun and challenging arrowword puzzles! Use Arabic clues to find English words, expand your vocabulary, and sharpen your mind with every puzzle. Whether you're a beginner or an advanced player, 
+enjoy a unique blend of language learning and brain-training fun.
+        </p>
+
+        <div class="hero__meta">
+          <span class="meta-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 21 7v10l-9 5-9-5V7z"/><path d="M12 12 21 7M12 12v10M12 12 3 7"/></svg>
+            Unity
+          </span>
+          <span class="meta-item">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="15.5" cy="9" r="2.5"/><path d="M3 14l6 2.5M9 16.5a2.5 2.5 0 1 0 0-.1"/></svg>
+            Steam
+          </span>
+          <span class="badge">In Development</span>
+        </div>
+
+        <div class="hero__buttons">
+          <a href="#projects" class="btn btn--primary">View Project
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <button class="btn btn--ghost" id="trailerBtn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5v14l12-7z"/></svg>
+            Watch Trailer
+          </button>
+        </div>
+      </div>
+
+      <div class="container hero__footer">
+        <p class="hero__tagline">Realistic. Automated. Immersive.</p>
+        <div class="hero__dots" id="heroDots">
+          <button class="dot active" aria-label="Slide 1"></button>
+          <button class="dot" aria-label="Slide 2"></button>
+          <button class="dot" aria-label="Slide 3"></button>
+          <button class="dot" aria-label="Slide 4"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <div class="projects__head reveal">
+          <div>
+            <p class="eyebrow">All Projects</p>
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-text">A collection of apps, games and creative projects I've built using modern technologies.</p>
+          </div>
+          <div class="filters" id="filters" role="tablist">
+            <button class="filter active" data-filter="all">All</button>
+            <button class="filter" data-filter="apps">Apps</button>
+            <button class="filter" data-filter="games">Games</button>
+            <button class="filter" data-filter="web">Web / Tools</button>
+            <button class="filter" data-filter="3d">3D / Archviz</button>
+          </div>
+        </div>
+
+        <div class="grid" id="projectGrid">
+          <article class="card reveal" data-category="apps">
+            <div class="card__media ph ph--arrow"><img src="images/im2.jpg" alt="Bilingual Arrow Words app" /></div>
+            <div class="card__body">
+              <p class="card__type">Mobile App</p>
+              <h3 class="card__title">Bilingual Arrow Words</h3>
+              <p class="card__text">A multilingual arrowword puzzle game (Arabic → English, Spanish → English, French → English).</p>
+              <div class="card__foot">
+                <ul class="tags"><li>React Native</li><li>Firebase</li><li>AdMob</li></ul>
+                <a href="#" class="card__link" aria-label="Open Bilingual Arrow Words"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="apps">
+            <div class="card__media ph ph--safe"><img src="images/im8.png" alt="SafeApps app" /></div>
+            <div class="card__body">
+              <p class="card__type">Mobile App</p>
+              <h3 class="card__title">SafeApps</h3>
+              <p class="card__text">An Android app that notifies you when your apps are opened and helps you protect your privacy.</p>
+              <div class="card__foot">
+                <ul class="tags"><li>Kotlin</li><li>Android</li></ul>
+                <a href="#" class="card__link" aria-label="Open SafeApps"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="games">
+            <div class="card__media ph ph--sea"><img src="images/im6.jpg" alt="Save the Seal game" /></div>
+            <div class="card__body">
+              <p class="card__type">Mobile Game</p>
+              <h3 class="card__title">Save the Seal</h3>
+              <p class="card__text">....</p>
+              <div class="card__foot">
+                <ul class="tags"><li>Unity</li><li>C#</li><li>3D</li></ul>
+                <a href="#" class="card__link" aria-label="Open Save the Seal"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="games">
+            <div class="card__media ph ph--garage"><img src="images/im6.jpg" alt="Car Garage Repair Simulator" /></div>
+            <div class="card__body">
+              <p class="card__type">Game Concept</p>
+              <h3 class="card__title">Car Garage Repair Simulator</h3>
+              <p class="card__text">Diagnose, repair and restore real-world cars in an immersive and educational experience.</p>
+              <div class="card__foot">
+                <ul class="tags"><li>Unity</li><li>C#</li><li>3D</li></ul>
+                <a href="#" class="card__link" aria-label="Open Car Garage Repair Simulator"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="3d">
+            <div class="card__media ph ph--arch"><img src="images/im4.png" alt="3D architecture render" /></div>
+            <div class="card__body">
+              <p class="card__type">3D / Archviz</p>
+              <h3 class="card__title">3D Architecture &amp; Interior</h3>
+              <p class="card__text">Realistic architectural visualizations and interior designs using Blender and Unreal Engine.</p>
+              <div class="card__foot">
+                <ul class="tags"><li>Blender</li><li>Unreal Engine</li><li>3D</li></ul>
+                <a href="#" class="card__link" aria-label="Open 3D Architecture and Interior"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal" data-category="games web">
+            <div class="card__media ph ph--soon"><img src="images/im3.png" alt="More projects coming soon" /></div>
+            <div class="card__body">
+              <p class="card__type">Game Project</p>
+              <h3 class="card__title">More Projects Coming Soon</h3>
+              <p class="card__text">New games, apps and creative experiments in development.</p>
+              <div class="card__foot">
+                <ul class="tags"><li>Unity</li><li>React Native</li><li>Next.js</li></ul>
+                <a href="#" class="card__link" aria-label="More projects"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="empty" id="emptyState" hidden>No projects in this category yet. Check back soon!</p>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="about" id="about">
+      <div class="container about__inner">
+        <div class="about__photo ph ph--portrait reveal"><img src="images/fekri.jpg" alt="Fekri El Farhani" /></div>
+
+        <div class="about__main reveal">
+          <p class="eyebrow">About Me</p>
+          <h2 class="about__title">Hi, I'm Fekri El Farhani</h2>
+          <p class="about__roles">Front-End Developer <i>•</i> App Developer <i>•</i> 3D Artist <i>•</i> Game Developer</p>
+          <p class="about__text">
+            I'm a passionate developer and creative designer based in Morocco. I love building interactive experiences,
+            clean user interfaces and immersive 3D worlds. With 6+ years of experience in React Native, I'm now also
+            exploring game development, 3D visualization and Blender to bring more ideas to life.
+          </p>
+          <div class="socials">
+            <a href="https://github.com/elfarhaniFekri" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+            <a href="https://linkedin.com/in/fekrielfarhani/" target="_blank"  aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="https://www.youtube.com/@Solid_Frame" target="_blank" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3z" class="fill"/></svg></a>
+          </div>
+        </div>
+
+        <aside class="about__side reveal" id="contact">
+          <div class="info">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.5 7-12a7 7 0 0 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><strong>Morocco</strong><span>Open to remote opportunities</span></div>
+          </div>
+    
+          <div class="info">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <div><strong>Let's work together</strong><a href="mailto:contact@solidframestudio">contact@solidframestudio.com</a></div>
+          </div>
+          <p class="signature">Fekri El Farhani</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#top" class="logo logo--sm">
+        <svg class="logo__icon" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 2 28 9v14L16 30 4 23V9z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M16 9l6 3.5v7L16 23l-6-3.5v-7z" fill="currentColor" opacity=".85"/>
+        </svg>
+        <span>SolidFrame</span>
+      </a>
+      <p class="footer__copy">© <span id="year">2025</span> Fekri El Farhani. All rights reserved.</p>
+      <a href="#top" class="back-top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+        Back to top
+      </a>
+    </div>
+  </footer>
+
+  <!-- Trailer modal -->
+  <div class="modal" id="trailerModal" hidden>
+    <div class="modal__box">
+      <button class="icon-btn modal__close" id="modalClose" aria-label="Close"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+      <div class="modal__video ph ph--factory">
+        <p>Trailer coming soon</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
